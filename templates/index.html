@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>{{title}}</title>
+    <link type="text/css" rel="stylesheet" href="/static/style/style.css">
+</head>
+<body>
+
+<header class="header">
+    <ul>
+        {% for i in titles %}
+        <li>
+            <a href="/{{loop.index - 1}}">{{i}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</header>
+
+<main>
+    <h1 class="heading">{{title}}</h1>
+
+    {% for i in arr %}
+    <div class="fanfik">
+        {% if i['likes'] >= 100 %}
+        <h2 class="name">{{i['name'] + "🔥"}}</h2>
+        {% else %}
+        <h2 class="name">{{i['name']}}</h2>
+        {% endif %}
+        <p class="text">{{texts[loop.index - 1]}}</p>
+        <a href="/category/{{index}}/fanfic/{{loop.index-1}}/like" class="likes">{{i['likes']}}</a>
+    </div>
+    {% endfor %}
+
+</main>
+
+</body>
+</html>
