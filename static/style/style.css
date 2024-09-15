@@ -21,21 +21,23 @@ ul {
 
 }
 
-li {
-    
-}
 
-.header a {
+.category {
     text-decoration: none;
     text-align: center;
     font-size: 35px;
-    padding: 15px;
     color: #85144B;
+    padding: 15px;
 }
 
-.header a:hover {
+.category:hover {
     color: #01ff70;
     background-color: #85144B;
+}
+
+#add {
+    font-size: 30px;
+    padding: 10px 15px;
 }
 
 
@@ -68,16 +70,37 @@ main {
     padding-bottom: 15px;
 }
 
-.likes {
+.button {
     font-size: 30px;
     background-color: rgba(246, 82, 126, 0.803);
     color: white;
     text-decoration: none;
-    padding: 10px;
     border-radius: 30px;
 }
-
-.likes:hover {
+.button:hover {
     color: rgba(246, 82, 126, 0.803);
     background-color: white;
 }
+
+#likes {
+    padding: 10px 15px;
+}
+
+#edit {
+    padding: 10px 15px;
+    background-color: rgb(255, 128, 0);
+}
+
+#delete {
+    padding: 10px 15px;
+    background-color: red;
+}
+
+#delete:hover {
+    background-color: white;
+    color: red;
+}
+
+
+
+

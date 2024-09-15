@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Font";
+    src: url("/static/fonts/Roboto-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #85144B;
+    font-family: "Font";
+    text-align: center;
+}
+
+.title {
+    font-size: 45px;
+    padding-left: 15px;
+}
+
+
+.form {
+    margin: 0 300px;
+    background-color: #01ff70;
+    text-align: center;
+    padding: 25px 0;
+    border-radius: 25px;
+}
+
+.form .name {
+    font-size: 30px;
+    font-family: 'Font';
+    color: #85144B;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 2px;
+    min-width: 30px;
+}
+
+.form.name:active {
+    border: 2px;
+}
+
+button {
+    font-size: 30px;
+    background-color: rgba(246, 82, 126, 0.803);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px;        
+}
+
+button:hover {
+    color: rgba(246, 82, 126, 0.803);
+    background-color: white;
+}

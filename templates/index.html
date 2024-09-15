@@ -9,9 +9,12 @@
     <ul>
         {% for i in titles %}
         <li>
-            <a href="/{{loop.index - 1}}">{{i}}</a>
+            <a href="/{{loop.index - 1}}" class="category">{{i}}</a>
         </li>
         {% endfor %}
+        <li>
+            <a class="button" id="add" href="/add_category_form">Добавить</a>
+        </li>
     </ul>
 </header>
 
@@ -26,7 +29,11 @@
         <h2 class="name">{{i['name']}}</h2>
         {% endif %}
         <p class="text">{{texts[loop.index - 1]}}</p>
-        <a href="/category/{{index}}/fanfic/{{loop.index-1}}/like" class="likes">{{i['likes']}}</a>
+        <div>
+            <a href="/category/{{index}}/fanfic/{{loop.index-1}}/like" class="button" id="likes">{{i['likes']}}</a>
+            <a href="#" class="button" id="edit">Изменить</a>
+            <a href="delete/{{index}}/{{loop.index-1}}" class="button" id="delete">Удалить</a>
+        </div>
     </div>
     {% endfor %}
 

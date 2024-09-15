@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from werkzeug.utils import redirect
 
 app = Flask(__name__)
@@ -55,5 +55,26 @@ def add_like(category_id, fanfic_id):
     return redirect(f'/{category_id}')
 
 
+@app.route('/add_category_form')
+def add_category_form():
+    return render_template('category_add_form.html')
+
+@app.route('/add_category', methods=['post', 'get'])
+def add_category():
+    global categories, titles
+
+    categories.append({'name': request.form.get('category_name'), 'fanfics': []})
+
+    titles = [i['name'] for i in categories]
+
+    print(categories)
+
+    return redirect('/')
+
+@app.route('/delete/<category_id>/<fanfic_id>')
+def delete(category_id, fanfic_id):
+    global categories
+    categories[int(category_id)]['fanfics'].pop(int(fanfic_id))
+    return redirect(f'/{category_id}')
 
 app.run(debug=True)
