@@ -53,3 +53,16 @@ button:hover {
     color: rgba(246, 82, 126, 0.803);
     background-color: white;
 }
+
+
+
+.form .text {
+    font-size: 15px;
+    font-family: 'Font';
+    color: #85144B;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 2px;
+    min-width: 30px;
+    padding: 5px 5px;
+}

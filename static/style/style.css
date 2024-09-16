@@ -44,10 +44,43 @@ ul {
 
 .heading {
     padding-top: 30px;
-    padding-bottom: 0px;
+
     font-size: 60px;
     
 }
+
+.name-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.name-buttons a {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+#edit-cat {
+    padding: 10px 15px;
+    background-color: rgb(255, 128, 0);
+}
+
+#edit-cat:hover {
+    background-color: white;
+    color: rgb(255, 128, 0);
+}
+
+
+#delete-cat {
+    padding: 10px 15px;
+    background-color: red;
+}
+
+#delete-cat:hover {
+    background-color: white;
+    color: red;
+}
+
 
 main {
     padding: 0 50px;
@@ -76,6 +109,7 @@ main {
     color: white;
     text-decoration: none;
     border-radius: 30px;
+    padding: 10px 15px;
 }
 .button:hover {
     color: rgba(246, 82, 126, 0.803);
@@ -91,6 +125,12 @@ main {
     background-color: rgb(255, 128, 0);
 }
 
+#edit:hover {
+    background-color: white;
+    color: rgb(255, 128, 0);
+}
+
+
 #delete {
     padding: 10px 15px;
     background-color: red;
@@ -100,6 +140,8 @@ main {
     background-color: white;
     color: red;
 }
+
+
 
 
 

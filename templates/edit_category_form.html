@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/static/style/style2.css">
+    <title>Добавить категорию</title>
+</head>
+<body>
+<h1 class="title">Изменение категории {{name}}</h1>
+<form action="/edit_category/{{category}}" class="form" method="post">
+    <h2 class="">Новое название категории(необязательно)</h2>
+    <input type="text" class="name" name="name">
+    <br>
+    <button>Изменить</button>
+</form>
+</body>
+</html>

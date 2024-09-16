@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/static/style/style2.css">
+    <title>Добавление фанфика</title>
+</head>
+<body>
+<h1 class="title">Добавление фанфика в категорию "{{name}}"</h1>
+<form class="form" method="post" action="/add_fanfic/{{category}}">
+    <h2>Название фанфика</h2>
+    <input type="text" class="name" name="name">
+
+    <h2>Текст фанфика</h2>
+    <textarea name="text" class="text" cols="100" rows="10"></textarea>
+
+    <button>Добавить</button>
+
+    <h2>{{message}}</h2>
+</form>
+</body>
+</html>
